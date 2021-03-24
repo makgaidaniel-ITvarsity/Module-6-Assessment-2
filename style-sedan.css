@@ -1,0 +1,896 @@
+/*==================== Body ===================*/
+body
+{
+    margin          : 0;
+    padding         : 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+p
+{
+    font-family: helverica, sans-serif;
+}
+
+
+/*================== Menu ======================*/
+#menu
+{
+    text-align      : center;
+    opacity         : 0.8;
+    margin-top: -5px;
+}
+
+#menu a
+{
+    color           : white;
+    text-shadow     : 2px 0px   darkslategrey;
+    font-weight     : 600;
+    font-size       : 20px;
+    padding         : 15px 25px 15px 15px;
+    border-bottom   : 3px dotted white;
+    display         : inline-block;
+}
+
+
+#menu a:hover
+{
+    background-color: darkslategrey;
+}
+
+p.icon i
+{
+    font-size: 30px;
+}
+
+
+#menu i
+{
+    margin-left     : 15px;
+}
+
+#menu a.menu-brocher
+{
+    background      : red;
+    animation       : br-color 3s infinite;
+}
+
+
+#menu a.menu-brocher:hover
+{
+    background-color: darkslategrey;
+}
+
+
+@keyframes br-color
+{
+    from
+    {
+        background-color: red;
+    }
+    
+    to
+    {
+        background-color: blue;
+    }
+}
+
+ul
+{
+    display         : inline;
+    margin          : 0;
+    padding-left    : 0px;
+}
+
+
+ul li
+{
+    display         : inline-block;
+}
+
+ul li:hover
+{
+    background-color: darkslategrey;
+}
+
+
+ul li:hover ul
+{
+    display         : block;
+}
+
+ul li ul
+{
+    position        : absolute;
+    width           : 200px;
+    display         : none;
+}
+
+
+ul li ul li
+{
+    background      : black ;
+    display         : block;
+}
+
+
+ul li ul li a
+{
+    display         : block !important;
+}
+
+ul li ul li:hover
+{
+    background      : darkslategrey;
+}
+
+/*======= Motion Picture ==============*/
+ .motion-picture
+{
+    width           : 100%;
+    position        : absolute;
+    top             : 0;
+    z-index         : -2;
+    background-color: black;
+}
+
+.motion-picture img
+{
+    position        : relative;
+    width           : 80%;
+    margin-left     : 10%;
+}
+
+
+/*============================================ models =================================================*/
+
+.wrapper 
+{
+    margin-top        : 510px;
+    background-color  : darkslategrey;
+    padding-bottom: 20px;
+}
+
+
+.toggle_radio
+{
+  position          : relative;
+  background        : rgba(0,0,0,.1);
+  margin            : 4px auto;
+  overflow          : hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius     : 50px;
+  position          : relative;
+  width             : 80%;
+  padding-bottom    : 20px;    
+}
+
+
+.toggle_radio > *
+{
+  float             : left;
+}
+
+
+.toggle_radio input[type=radio
+]{
+  display           : none;
+
+}
+
+
+.toggle_radio label
+{
+  font              : 90%/1.618 "Lato";
+  color             : rgba(0,0,0,.9);
+  z-index           : 0;
+  display           : block;
+  width             : 98%;
+  height            : 100px;
+  margin            : 3px 3px;
+  font-family       : "Lato";
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius     : 50px;
+  cursor            : pointer;
+  z-index           : 1;
+  text-align        : center;
+  border            : 3px solid green;
+}
+
+
+.toggle_radio label:hover
+{
+  border            : 3px solid white;  
+}
+
+.toggle_radio p.heading
+{
+    font-weight     : 600;
+    font-size       : 25px;
+    margin-left     :  5%;
+    margin-top      : 18px;
+    justify-content : center;
+    border-bottom   : 3px solid black;
+    display         : inline-block
+    
+}
+
+
+.toggle_radio p.item
+{
+    display         : inline-block;
+    color           : white;
+    
+    margin-left     :  2%;
+    margin-right    :  2%;
+    font-weight     : 600;
+}
+
+/*======= Slider ================*/
+.toggle_option_slider
+{
+  width             : 98%;
+  height            : 100px;
+  position          : absolute;
+  top               : 0px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius     : 100px;
+  -webkit-transition: all .4s ease;
+  -moz-transition   : all .4s ease;
+  -o-transition     : all .4s ease;
+  -ms-transition    : all .4s ease;
+  transition        : all .4s ease;
+  
+}
+
+
+.toggle_option_slider i
+{
+    font-size       : 40px;
+    font-weight     : 600;
+    margin-top      : 3%;
+    margin-left     : 1%;
+}
+
+#first_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 78px;   
+}
+
+#second_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 190px;
+}
+
+#third_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 302px;
+    
+}
+
+#forth_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 414px;
+    
+}
+
+
+#fifth_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 526px;
+    
+}
+
+#sixth_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 638px;
+    
+}
+
+
+
+#seventh_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 750px;
+    
+}
+
+
+
+
+#eighth_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 862px;
+    
+}
+
+
+#ninth_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 974px;
+    
+}
+
+
+#tenth_toggle:checked ~ .toggle_option_slider
+{
+  animation         : model-color 1s infinite;
+  background        : rgba(255,255,255,.1);   
+  left              : .3%;
+  top               : 1086px;
+    
+}
+
+@keyframes model-color
+{
+    from
+    {
+        
+        color:white;
+        border            : 3px solid white;
+    }
+    
+    to
+    {
+        
+        color: orange;
+        border            : 3px solid orange; 
+    }
+}
+
+
+p.day
+{
+    line-height     : 0px;
+    font-size           : 2em;
+}
+/*======================================== color =======================================================*/
+
+.mazda-color
+{
+    margin-top      : 20px;
+    margin-left     : auto;
+    margin-right    : auto;
+    width           : 95%;
+    height          : 1000px;
+    border          : 3px solid darkslategrey;
+    box-shadow      : 2px 2px 18px darkslategrey;
+    position        : relative;
+    overflow        : scroll;
+}
+
+p.p-style
+{
+    text-align      : center;
+    font-weight     : 600;
+    font-size       : 25px;
+    font-family     : cursive;
+    text-shadow     : 0 0 3px #FF0000, 0 0 5px #0000FF; 
+    color           : white;
+    
+}
+
+.mazda-color label
+{
+    position        : relative;
+    margin          : 10px;
+    margin-left     : 2%;
+    width           : 30%;
+    height          : 280px;
+    float           : left;
+    border          : 1px solid green;
+    text-align      : center;
+    font-family     : cursive;
+    cursor          : pointer;
+}
+
+.mazda-color label:hover
+{
+    border          : 1px solid yellow;
+    font-weight     : 600;
+    
+}
+
+.mazda-color input[type=radio]
+{
+    display: none;
+}
+
+.mazda-color label img
+{
+    width           : 95%;
+    position        : relative;
+    margin-left     : 2.5%;
+    margin-top      : 5px;
+    cursor          : pointer;
+}
+
+
+
+/*=========== slider ==============*/
+.color-slider
+{
+    width           : 30%;
+    height          : 280px;
+    position: absolute;
+     -webkit-transition: all .4s ease;
+    -moz-transition   : all .4s ease;
+    -o-transition     : all .4s ease;
+    -ms-transition    : all .4s ease;
+    transition        : all .4s ease;
+    
+}
+
+
+ #color-rFirst:checked ~ .color-slider
+{
+    left            : 2.1%;
+    top             : 95px; 
+   box-shadow: 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+ #color-rSecond:checked ~ .color-slider
+{
+    left            : 35%;
+    top             : 95px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+ #color-rThird:checked ~ .color-slider
+{
+    left            : 67.9%;
+    top             : 95px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+
+ #color-rForth:checked ~ .color-slider
+{
+    left            : 2.1%;
+    top             : 397px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+
+ #color-rFifth:checked ~ .color-slider
+{
+    left            : 35%;
+    top             : 397px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+
+ #color-rSixth:checked ~ .color-slider
+{
+    left            : 67.9%;
+    top             : 397px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+ #color-rSeventh:checked ~ .color-slider
+{
+    
+    left            : 2.1%;
+    top             : 699px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+ #color-rEighth:checked ~ .color-slider
+{
+    left            : 35%;
+    top             : 699px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+ #color-rNinth:checked ~ .color-slider
+{
+    left            : 67.9%;
+    top             : 699px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+
+#color-rTenth:checked ~ .color-slider
+{
+    left            : 2.1%;
+    top             : 1002px;
+    box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+}
+
+/*======================== Order ============================*/
+
+.order
+{
+    /*border: 1px solid red;*/
+}
+/*============= order ==============*/
+.order-button
+{
+    width           : 20%;
+    background      : rgba(0,0,0,0.6);
+    margin-left     : 55%;
+    font-weight     : 800;
+    font-size       : 25px;
+    border          : 2px solid white;
+    margin-top      : 20px;
+    cursor          : pointer;          
+}
+
+.order-button p
+{
+    color           : white;
+    text-align      : center;
+    
+}
+
+.order-button:hover
+{
+    background-color: darkslategrey;
+    box-shadow      :  1px 1px 13px 5px rgba(0,0,0,0.6);
+}
+
+/*============= brochure ==============*/
+
+.brochure
+{
+    float           : left;
+    width           : 20%;
+    margin-left     : 20%;
+    font-weight     : 800;
+    font-size       : 25px;
+    border          : 2px solid white;
+    margin-top      : 15px;
+    cursor          : pointer;
+    background      : red;
+    animation       : br-color 5s infinite;
+       
+}
+
+.brochure p
+{
+    color           : white;
+    text-align      : center;  
+}
+
+.brochure:hover
+{
+    background-color: darkslategrey;
+    box-shadow      :  1px 1px 13px 5px rgba(0,0,0,0.6);
+}
+
+/*======================== footer ============================*/
+#footer
+{
+    margin-top      : 20px;
+    
+    display         : block;
+    width           : 100%;
+    color           : #ffffff;
+    background-color: darkslategrey;
+    height          : 350px;
+    margin-bottom   : -16px;
+}
+
+#footer a:visited
+{
+    color           : white;
+}
+
+#footer  ul
+{
+    list-style-type : square;
+}
+
+
+#footer a 
+{
+    color           : white;
+    font-size       : 20px;
+    font-family     : helvertica, sans-serif;
+    line-height     : 25px;
+    display         : block;
+    width           : 33%;
+    
+}
+
+#footer a:hover 
+{
+    text-decoration: underline;
+    color: aqua;
+    
+}
+
+#footer p
+{
+    font-family     : sans-serif;
+    font-weight     : 700;
+    font-size       : 25px;
+}
+
+#block1
+{
+    padding-right   : 10%;
+    padding-left    : 10%;
+    float           : left;
+    border-right    : 1px solid grey;
+}
+
+#block2
+{
+    padding-right   : 11%;
+    padding-left    : 11%;
+    float           : left;
+    padding-left    : 7%;
+    border-right    : 1px solid grey;
+    
+}
+
+
+#social
+{
+    width           : 32%;
+    float           : right;
+}
+
+#social p
+{
+    
+    display         : inline-block;
+    padding         : 5px;
+}
+
+#social i
+{
+    font-size       : 35px;
+}
+
+
+#social i:hover
+{
+    background-color: white;
+    color           : darkslategrey;
+}
+
+
+/*======================= copyright ============================*/
+#copyright
+{
+    width           : 100%;
+    height          : 30px;
+    background-color: black;
+    color           : white;
+    
+}
+
+
+
+#copyright p
+{
+    text-align      : center;
+}
+
+
+
+
+/*============================================ models  resize =================================================*/
+
+
+
+
+@media only screen and (max-width: 1245px)
+{
+    
+    .wrapper 
+    {
+        margin-top        : 380px;
+        
+    }
+    .toggle_radio p.heading
+    {
+        font-weight     : 600;
+        font-size       : 20px;
+    }
+    
+    #first_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 68px;   
+    }
+    
+    #second_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 180px;
+    }
+    
+    
+    #third_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 292px;
+
+    }
+
+    #forth_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 404px;
+
+    }
+
+
+    #fifth_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 516px;
+
+    }
+
+    #sixth_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 628px;
+
+    }
+
+
+
+    #seventh_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 740px;
+
+    }
+
+
+
+
+    #eighth_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 852px;
+
+    }
+
+
+    #ninth_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 964px;
+
+    }
+
+
+    #tenth_toggle:checked ~ .toggle_option_slider
+    {
+      animation         : model-color 1s infinite;
+      background        : rgba(255,255,255,.1);   
+      left              : .3%;
+      top               : 1076px;
+
+    }   
+    
+    
+    /*====== color slider ===========*/
+    #color-rSecond:checked ~ .color-slider
+    {
+        left            : 35.4%;
+        top             : 95px;
+        box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+    }
+    
+    
+    #color-rThird:checked ~ .color-slider
+    {
+        left            : 68.4%;
+        top             : 95px;
+        box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+    }
+    
+    
+    #color-rFifth:checked ~ .color-slider
+    {
+        left            : 35.4%;
+        top             : 397px;
+        box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+    }
+
+
+
+    #color-rSixth:checked ~ .color-slider
+    {
+        left            : 68.4%;
+        top             : 397px;
+        box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+    }
+    
+    
+    
+    
+    #color-rEighth:checked ~ .color-slider
+    {
+        left            : 35.4%;
+        top             : 699px;
+        box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+    }
+
+
+ #color-rNinth:checked ~ .color-slider
+    {
+        left            : 68.4%;
+        top             : 699px;
+        box-shadow      : 1px 1px 8px blue, 3px 3px 18px red, 6px 6px 8px green;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 999px)
+{
+    .toggle_radio p.heading
+    {
+        font-weight     : 400;
+        font-size       : 15px;
+    }
+}

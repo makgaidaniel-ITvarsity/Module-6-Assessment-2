@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auto4Sale</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fonts/css/all.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="logo">
+            <h1><i class="fas fa-car"></i>Auto4Sale</h1>
+        </div>
+<!---------------------- Menu   ----------------------------------------->     
+        <div id="menu">
+            <a href="index.html"><p class="icon"><i class="fas fa-car"></i></p></a>
+            <a href="about.html"><p>ABOUT</p></a>
+            <a href="contact.html"><p>CONTACT</p></a>
+                <ul>
+                    <li>
+                        <a href="#"><p>CLASS <i class="fas fa-chevron-down"></i></p></a>
+                        <ul>
+                            <li><a href="budget-cars.html"><p>Budget Cars</p></a></li>
+                            <li><a href="sedans.html"><p>Sedans</p></a></li>
+                            <li><a href="mid-size-SUV.html"><p>Mid Size SUV</p></a></li>
+                            <li><a href="bakkies.html"><p>Leisure Bakkies</p></a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+           
+        </div>
+
+        
+<!----------------------- Slide Show ----------------------------------->
+        
+        <div id="motion-picture">
+            <div class="slider">
+                <div class="slides">
+                    <!--radio buttons start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- radoi buttons end -->
+
+                    <!-- slide images start-->
+                    <div class="slide first">
+                        <div class="text">
+                            <p>Mid Size SUVs</p>
+                        </div>
+                        <a href="mid-size-SUV.html"><img class="p" src="images/class-3/VW-Tiguan/VW-Tiguan-front-side-white.jpg"></a>
+                    </div>
+
+                    <div class="slide">
+                        <div class="text">
+                            <p>Budget Cars</p>
+                        </div>
+                        <a href="budget-cars.html"><img class="p budget" src="images/class-1/renault-kwid/Renault-Kwid-climber.jpg"></a>
+                    </div>
+
+                    <div class="slide">
+                        <div class="text">
+                            <p>Sedans</p>
+                        </div>
+                        <a href="sedans.html"><img class="s sedans" src="images/class-2/Audi-4/audi-a4-front.webp"></a>
+                    </div>
+
+                    <div class="slide">
+                        <div class="text">
+                            <p>Leisure Bakkies</p>
+                        </div>
+                        <a href="bakkies.html"><img class="s bakkie" src="images/class-4/Mazda-BT-50/Mazda%20BT-50%202021-black.jpg"></a>
+                    </div>
+                    <!--slide images end--> 
+                    <!-- automatic navigation start-->
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--automatic navigation end-->
+
+                </div>
+                <!--manual navigation start-->
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+            </div>
+            <!--image slide end-->
+        </div>
+        <!-------------------------------------------------------->    
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function()
+                {
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4)
+                        {
+                            counter = 1;
+                        }
+
+                }, 5000);
+            </script>
+<!---------------------------------------------------------------------->
+        <div id="features">
+                <div id="feature-budget">
+                    <p>Toyoya Aygo</p>
+                    <a href="budget-toyota-aygo.html">
+                        <img src="images/class-1/toyota-aygo/aygo-orange.jpg">
+                    </a>                                           <p class="price">Starts : R 182 000</p>         
+                </div>
+                    
+                <div id="feature-sedan">
+                    <p>Mazda 3</p>
+                    <a href="sedan-mazda-3.html">
+                        <img src="images/class-2/mazda-3/mazda-3-front-side.png">
+                    </a>
+                    <p class="price">Starts : R 335 913</p>
+                </div>
+
+
+                <div id="feature-mid-s">
+                    
+                    <p>Kia Sportage</p>
+                    <a href="mid-kia-sportage.html">
+                        <img src="images/class-3/Kia-Sportage/Kia-Sportage-rear-side-sea.jpg">
+                    </a>
+                    <p class="price">Starts : R 406 995</p>
+                </div>
+
+                <div id="feature-bakkie">
+                <p>Ford Ranger</p>
+                    
+                    <a href="bakkie-ford-ranger.html">
+                        <img src="images/class-4/Ford-Ranger/Ford-Ranger-off-road.jpg"><br/>
+                    </a>
+                    <p class="price">Starts : R 462 900</p>
+                </div>
+        </div>
+        
+
+<!---------------------------- Footer --------------------------------------------> 
+        <div id="footer">
+            <p>Visit websites of the brands we offer </p>
+           
+            <div id="block1">
+                <ul>
+                    <a href="https://www.toyota.co.za/"><li>Toyota</li></a>
+
+                    <a href="https://www.vw.co.za/en.html"><li>VolksWagen</li></a>
+
+                    <a href="https://www.audi.co.za/za/web/en.html"><li>Audi</li></a>
+
+                    <a href="https://www.nissan.co.za/"><li>Nissan</li></a>
+
+                    <a href="https://www.datsun.co.za/"><li>Datsun</li></a>
+                    <a href="https://www.hyundai.co.za/"><li>Hyundai</li></a>
+
+                    <a href="https://www.ford.co.za/"><li>Ford</li></a>
+
+                    <a href="https://www.renault.co.za/"><li>Renault</li></a>
+
+                    <a href="https://www.bmw.co.za/en/index.html"><li>BMW</li></a>
+                </ul>
+            </div>
+            
+            <div id="block2">
+                <ul>
+                    <a href="https://www.mazda.co.za/"><li>Mazda</li></a>
+
+
+                    <a href="https://www.kia.co.za/"><li>KIA</li></a>
+
+                    <a href="https://www.honda.co.za/cars"><li>Honda</li></a>
+
+                    <a href="https://isuzu.co.za/"><li>Isuzu</li></a>
+
+                    <a href="https://www.mitsubishi-motors.co.za/"><li>Mitsubishi</li></a>
+                    <a href="https://www.nissan.co.za/"><li>Nissan</li></a>
+
+                    <a href="https://www.mercedes-benz.co.za/passengercars.html?group=all&subgroup=all.BODYTYPE.hatchback&view=BODYTYPE"><li>Mercedes Benz</li></a>
+                </ul>
+            </div>
+            
+            <div id="social">
+                <h1>Auto4Sale</h1><br/>
+                <p><a href="#"><i class="fab fa-facebook-square"></i></a></p>
+                <p><a href="#"><i class="fab fa-twitter-square"></i></a></p>
+                <p><a href="#"><i class="fab fa-instagram-square"></i></a></p>
+                <p><a href="#"><i class="fab fa-linkedin"></i></a></p>
+                <p><a href="#"><i class="fab fa-whatsapp-square"></i></a></p>
+                <p><a href="#"><i class="fab fa-pinterest"></i></a></p>
+            </div>
+        </div>
+        
+        <div id="copyright">
+            <p>&copy;2021 | Daniel Makgai</p>
+        </div>
+    </body>
+</html>
